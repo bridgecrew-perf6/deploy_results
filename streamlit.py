@@ -14,7 +14,24 @@ def main():
 
     video_id = st.selectbox(
         'Video Captions',
-        ('video7013', 'video7014', 'video7015', 'video7016', 'video8000')
+        (
+            'video7010',
+            'video7011',
+            'video7012',
+            'video7013',
+            'video7014',
+            'video7015',
+            'video7016',
+            'video7017',
+            'video7018',
+            'video7019',
+            'video7020',
+            'video7021',
+            'video7022',
+            'video7023',
+            'video7024',
+            'video7025',
+        )
     )
 
     st.write('Yu selected:', video_id)
@@ -25,7 +42,7 @@ def main():
     # st.write('Generated caption :', results["predictions"][video_id]["caption"])
 
     if video_id :
-        video_file = open('data/test_videos/TestVideo/' + video_id + '.mp4', 'rb')
+        video_file = open('data/test_videos/' + video_id + '.mp4', 'rb')
         video_bytes = video_file.read()
 
     st.video(video_bytes)
