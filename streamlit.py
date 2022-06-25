@@ -42,7 +42,7 @@ def main():
     # st.write('Generated caption :', results["predictions"][video_id]["caption"])
 
     if video_id :
-        video_file = open('data/test_videos/' + video_id + '.mp4', 'rb')
+        video_file = open('test_videos/' + video_id + '.mp4', 'rb')
         video_bytes = video_file.read()
 
     st.video(video_bytes)
