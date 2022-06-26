@@ -57,6 +57,7 @@ import streamlit as st
 import json
 import pandas as pd
 import numpy as np
+import matplotlib
 
 def main():
     epoch_list = [0, 50, 100, 150, 200, 300, 400, 500, 750, 1000, 1500, 2000, 3000,]
