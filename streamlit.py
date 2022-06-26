@@ -122,7 +122,8 @@ def main():
         data = score_list,
         index = epoch_list,
         columns = ["BLEU_1", "BLEU_2", "BLEU_3", "BLEU_4", "METEOR", "ROUGE_L", "CIDEr"]
-    ).style.background_gradient(axis=0)
+    )
+    # ).style.background_gradient(axis=0)
     st.table(df3)
 
     # st.header("Detail")
